@@ -1,0 +1,6 @@
+framework module Pods_PhotoBoardFireBase {
+  umbrella header "Pods-PhotoBoardFireBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
