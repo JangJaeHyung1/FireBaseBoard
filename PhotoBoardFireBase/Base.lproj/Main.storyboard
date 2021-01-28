@@ -99,14 +99,95 @@
                         <outlet property="appleLoginBtn" destination="0iP-xN-MJL" id="5Lq-co-Z24"/>
                         <outlet property="lblEmail" destination="heR-q9-bBt" id="4vP-uu-ni0"/>
                         <outlet property="lblPassword" destination="4zL-uF-oiR" id="Dhw-Ci-tgp"/>
+                        <segue destination="k7x-8I-1OB" kind="show" identifier="Home" id="K39-gu-niQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-204.34782608695653" y="71.651785714285708"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="DyF-ge-jMC">
+            <objects>
+                <viewController id="M8a-Yt-Q9s" customClass="HomeViewController" customModule="PhotoBoardFireBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aiJ-1V-oIR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPg-Cg-8IQ">
+                                <rect key="frame" x="20" y="411" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9r5-wR-PsN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9r5-wR-PsN" firstAttribute="trailing" secondItem="MPg-Cg-8IQ" secondAttribute="trailing" constant="20" id="5fP-B4-2G8"/>
+                            <constraint firstItem="MPg-Cg-8IQ" firstAttribute="top" secondItem="9r5-wR-PsN" secondAttribute="top" constant="411" id="e4f-Gd-7M0"/>
+                            <constraint firstItem="MPg-Cg-8IQ" firstAttribute="leading" secondItem="9r5-wR-PsN" secondAttribute="leading" constant="20" id="v1i-CW-EhM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="baseline_home_black_24pt" selectedImage="baseline_home_black_24pt" id="BHg-Zd-BJh"/>
+                    <navigationItem key="navigationItem" id="oIf-Q5-F13"/>
+                    <connections>
+                        <outlet property="lblUser" destination="MPg-Cg-8IQ" id="CJG-am-rBB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="km3-I6-GQQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524.6376811594205" y="-180.13392857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YV8-sX-QSo">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="k7x-8I-1OB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wCf-Hp-odC"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kbT-CR-lnW">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="M8a-Yt-Q9s" kind="relationship" relationship="viewControllers" id="sBL-jw-BJd"/>
+                        <segue destination="7UF-xB-A2b" kind="relationship" relationship="viewControllers" id="P6H-ZT-4Om"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hm0-uC-o0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627.536231884058" y="71.651785714285708"/>
+        </scene>
+        <!--User-->
+        <scene sceneID="JaS-Qt-F6L">
+            <objects>
+                <viewController id="7UF-xB-A2b" customClass="UserViewController" customModule="PhotoBoardFireBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2QL-p5-beu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6u-5x-ut0">
+                                <rect key="frame" x="183" y="406" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="7UF-xB-A2b" eventType="touchUpInside" id="ET3-og-SZF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zmj-bg-klY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User" image="baseline_person_black_24pt" selectedImage="baseline_person_black_24pt" id="lip-OZ-jTB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHn-WC-yK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515.9420289855075" y="502.90178571428567"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="baseline_home_black_24pt" width="24" height="24"/>
+        <image name="baseline_person_black_24pt" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
