@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B57B25F7C216DA82808D1920 /* Pods_PhotoBoardFireBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE258CBE0462783E01A42D29 /* Pods_PhotoBoardFireBase.framework */; };
+		D18CF69A25C285CB00AEA5F3 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D18CF69925C285CB00AEA5F3 /* HomeKit.framework */; };
 		D1DE0AA925C0586000248380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE0AA825C0586000248380 /* AppDelegate.swift */; };
 		D1DE0AAB25C0586000248380 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE0AAA25C0586000248380 /* SceneDelegate.swift */; };
 		D1DE0AAD25C0586000248380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE0AAC25C0586000248380 /* ViewController.swift */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		92068FB19952F5206DCA3A5B /* Pods-PhotoBoardFireBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBoardFireBase.debug.xcconfig"; path = "Target Support Files/Pods-PhotoBoardFireBase/Pods-PhotoBoardFireBase.debug.xcconfig"; sourceTree = "<group>"; };
 		A0708930C819637E434E24CE /* Pods-PhotoBoardFireBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBoardFireBase.release.xcconfig"; path = "Target Support Files/Pods-PhotoBoardFireBase/Pods-PhotoBoardFireBase.release.xcconfig"; sourceTree = "<group>"; };
+		D18CF69825C285CB00AEA5F3 /* PhotoBoardFireBase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoBoardFireBase.entitlements; sourceTree = "<group>"; };
+		D18CF69925C285CB00AEA5F3 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		D1DE0AA525C0586000248380 /* PhotoBoardFireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBoardFireBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DE0AA825C0586000248380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1DE0AAA25C0586000248380 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18CF69A25C285CB00AEA5F3 /* HomeKit.framework in Frameworks */,
 				B57B25F7C216DA82808D1920 /* Pods_PhotoBoardFireBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +51,7 @@
 		077871A5720D6FF63414552D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D18CF69925C285CB00AEA5F3 /* HomeKit.framework */,
 				DE258CBE0462783E01A42D29 /* Pods_PhotoBoardFireBase.framework */,
 			);
 			name = Frameworks;
@@ -82,6 +87,7 @@
 		D1DE0AA725C0586000248380 /* PhotoBoardFireBase */ = {
 			isa = PBXGroup;
 			children = (
+				D18CF69825C285CB00AEA5F3 /* PhotoBoardFireBase.entitlements */,
 				D1DE0AA825C0586000248380 /* AppDelegate.swift */,
 				D1DE0AAA25C0586000248380 /* SceneDelegate.swift */,
 				D1DE0AAC25C0586000248380 /* ViewController.swift */,
@@ -377,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PhotoBoardFireBase/PhotoBoardFireBase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU86N788J6;
 				INFOPLIST_FILE = PhotoBoardFireBase/Info.plist;
@@ -397,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PhotoBoardFireBase/PhotoBoardFireBase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU86N788J6;
 				INFOPLIST_FILE = PhotoBoardFireBase/Info.plist;
