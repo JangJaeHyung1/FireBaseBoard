@@ -1,0 +1,67 @@
+# FireBaseBoard
+
+FireBase로 구현한 갤러리 게시판
+
+1. 로그인 화면
+
+<img width="467" alt="로그인화면" src="https://user-images.githubusercontent.com/37135479/106381647-94d82100-63fd-11eb-895a-f10a2fe9a96c.png">
+
+
+
+
+1-1. 구글 로그인 지원
+
+<img width="467" alt="구글로그인" src="https://user-images.githubusercontent.com/37135479/106381648-99043e80-63fd-11eb-8f10-0f31468ac236.png">
+
+
+
+
+1-2. 애플 로그인 지원
+
+<img width="467" alt="애플로그인" src="https://user-images.githubusercontent.com/37135479/106381649-9a356b80-63fd-11eb-8963-66d625c5f793.png">
+
+
+
+
+2. 게시글 리스트
+
+<img width="467" alt="게시글리스트" src="https://user-images.githubusercontent.com/37135479/106381650-9bff2f00-63fd-11eb-993c-b6fafd515067.png">
+
+
+
+
+3. 게시글 업로드 하기
+
+<img width="467" alt="게시글업로드" src="https://user-images.githubusercontent.com/37135479/106381652-9e618900-63fd-11eb-96e0-47f890358cee.png">
+
+
+
+
+4. 업로드 게시글 작성하기
+
+<img width="467" alt="업로드작성" src="https://user-images.githubusercontent.com/37135479/106381653-9f92b600-63fd-11eb-828d-c09203078960.png">
+
+
+
+
+5. 작성완료시 reload 된 tableView
+
+<img width="467" alt="작성완료" src="https://user-images.githubusercontent.com/37135479/106381655-a0c3e300-63fd-11eb-8096-1cf74d0f76d3.png">
+
+
+
+
+6. 다른 계정으로 로그인시 마찬가지로 보이는 게시글들
+
+<img width="467" alt="언아더계정" src="https://user-images.githubusercontent.com/37135479/106381657-a1f51000-63fd-11eb-9247-f6a7aa4f102f.png">
+
+
+
+
+7. realTimeDataBase 저장된 내용
+
+<img width="808" alt="실시간디비" src="https://user-images.githubusercontent.com/37135479/106381805-b1c12400-63fe-11eb-9509-a9d4f87c3090.png">
+
+
+
+
