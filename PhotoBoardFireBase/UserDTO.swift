@@ -2,16 +2,19 @@
 //  UserDTO.swift
 //  PhotoBoardFireBase
 //
-//  Created by jh on 2021/01/30.
+//  Created by jh on 2021/01/31.
 //
 
 import UIKit
 
+@objcMembers
 class UserDTO: NSObject {
-
-    var uid: String?
-    var userId: String?
-    var subject: String?
     var explaination: String?
     var imageUrl: String?
+    var subject: String?
+    var uid: String?
+    var userId: String?
+    var likeCount: NSNumber?
+    var likes: [String:Bool]?
+    var imageName: String?
 }

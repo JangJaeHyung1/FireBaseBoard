@@ -33,18 +33,15 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
             return
         }
         
-        let imageName = Auth.auth().currentUser?.uid ?? " " + "\(Int(NSDate.timeIntervalSinceReferenceDate * 1000)).jpg"
+        let imageName = Auth.auth().currentUser!.uid + "\(Int(NSDate.timeIntervalSinceReferenceDate * 1000)).jpg"
         
-        let riversRef = Storage.storage().reference().child("ios_images").child(imageName)
+        let riversRef = Storage.storage().reference().child("ios_images/\(imageName)")
         
-        riversRef.putData(image.pngData()!, metadata: nil) { (metadata, error) in
-            guard let metadata = metadata else {
+        riversRef.putData(image.jpegData(compressionQuality: 0.1)!, metadata: nil) { (metadata, error) in
+            guard metadata != nil else {
                 // Uh-oh, an error occurred!
                 return
             }
-            
-            // Metadata contains file metadata such as size, content-type.
-            let size = metadata.size
             // You can also access to download URL after upload.
             riversRef.downloadURL { (url, error) in
                 guard let downloadURL = url else {
@@ -56,7 +53,8 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
                     "uid": Auth.auth().currentUser?.uid,
                     "subject": self.subject.text!,
                     "explaination": self.explaination.text!,
-                    "imageUrl" : downloadURL.absoluteString
+                    "imageUrl" : downloadURL.absoluteString,
+                    "imageName" : imageName
                 ])
                 self.dismiss(animated: true, completion: nil)
             }
