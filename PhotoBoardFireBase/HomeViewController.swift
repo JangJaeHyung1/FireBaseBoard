@@ -24,8 +24,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
 //
         cell.subject.text = array[indexPath.row].subject
         cell.explaination.text = array[indexPath.row].explaination
-
-        
+        cell.likeCount.text = "like : \(array[indexPath.row].likeCount ?? 0)"
+    
         URLSession.shared.dataTask(with: URL(string: array[indexPath.row].imageUrl!)!) { (data, response, error) in
             if error != nil{
                 return
@@ -165,4 +165,6 @@ class CustomCell : UICollectionViewCell{
     @IBOutlet weak var deleteImg: UIButton!
     @IBOutlet weak var subject: UILabel!
     @IBOutlet weak var explaination: UILabel!
+    
+    @IBOutlet weak var likeCount: UILabel!
 }

@@ -140,19 +140,19 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2G-ot-yCi">
-                                                    <rect key="frame" x="15" y="237" width="350" height="21"/>
+                                                    <rect key="frame" x="15" y="237" width="200" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="XB5-Sg-zcr"/>
-                                                        <constraint firstAttribute="width" constant="350" id="rCU-dk-wbi"/>
+                                                        <constraint firstAttribute="width" constant="200" id="rCU-dk-wbi"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jm-T4-4ud">
-                                                    <rect key="frame" x="15" y="259" width="350" height="21"/>
+                                                    <rect key="frame" x="15" y="259" width="200" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="350" id="XcT-QE-MQi"/>
+                                                        <constraint firstAttribute="width" constant="200" id="XcT-QE-MQi"/>
                                                         <constraint firstAttribute="height" constant="21" id="aoj-cu-0Jx"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -183,6 +183,16 @@
                                                     </constraints>
                                                     <state key="normal" image="baseline_delete_black_24pt"/>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="like : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzV-HI-E7S">
+                                                    <rect key="frame" x="258" y="248" width="63" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="0eJ-3o-nCQ"/>
+                                                        <constraint firstAttribute="width" constant="63" id="Q1L-L5-aT5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Q2G-ot-yCi" firstAttribute="top" secondItem="cpd-ek-5iV" secondAttribute="bottom" constant="5" id="1DH-yb-yue"/>
@@ -192,15 +202,18 @@
                                                 <constraint firstAttribute="trailing" secondItem="JRZ-Xb-ZjX" secondAttribute="trailing" constant="22" id="7N6-It-nOZ"/>
                                                 <constraint firstItem="Q2G-ot-yCi" firstAttribute="leading" secondItem="syG-Si-bHR" secondAttribute="leading" constant="15" id="HVw-hA-cNa"/>
                                                 <constraint firstItem="ilI-4h-E9g" firstAttribute="top" secondItem="1Jm-T4-4ud" secondAttribute="bottom" constant="5" id="Idr-6a-OLE"/>
+                                                <constraint firstItem="ilI-4h-E9g" firstAttribute="top" secondItem="tzV-HI-E7S" secondAttribute="bottom" constant="16" id="L9U-za-Hfp"/>
                                                 <constraint firstAttribute="bottom" secondItem="ilI-4h-E9g" secondAttribute="bottom" constant="5" id="Mxf-xa-lT0"/>
                                                 <constraint firstAttribute="trailing" secondItem="cpd-ek-5iV" secondAttribute="trailing" constant="8" id="N69-7E-7ft"/>
                                                 <constraint firstItem="cpd-ek-5iV" firstAttribute="top" secondItem="syG-Si-bHR" secondAttribute="top" constant="8" id="PVN-lC-Gmk"/>
+                                                <constraint firstItem="CBt-YS-jQU" firstAttribute="leading" secondItem="tzV-HI-E7S" secondAttribute="trailing" constant="8" symbolic="YES" id="QNq-ec-4W1"/>
                                                 <constraint firstItem="1Jm-T4-4ud" firstAttribute="top" secondItem="Q2G-ot-yCi" secondAttribute="bottom" constant="1" id="Qac-QC-cSB"/>
                                                 <constraint firstItem="ilI-4h-E9g" firstAttribute="top" secondItem="JRZ-Xb-ZjX" secondAttribute="bottom" constant="14" id="T02-Tw-gSx"/>
                                                 <constraint firstItem="CBt-YS-jQU" firstAttribute="top" secondItem="cpd-ek-5iV" secondAttribute="bottom" constant="15" id="T6S-jD-Gzd"/>
                                                 <constraint firstAttribute="trailing" secondItem="ilI-4h-E9g" secondAttribute="trailing" constant="8" id="XgR-Ey-aMO"/>
                                                 <constraint firstItem="1Jm-T4-4ud" firstAttribute="leading" secondItem="syG-Si-bHR" secondAttribute="leading" constant="15" id="ele-iF-e8J"/>
                                                 <constraint firstItem="cpd-ek-5iV" firstAttribute="leading" secondItem="syG-Si-bHR" secondAttribute="leading" constant="8" id="kBV-PI-1aW"/>
+                                                <constraint firstItem="tzV-HI-E7S" firstAttribute="top" secondItem="cpd-ek-5iV" secondAttribute="bottom" constant="16" id="nA1-Zi-Z4Q"/>
                                                 <constraint firstItem="ilI-4h-E9g" firstAttribute="top" secondItem="CBt-YS-jQU" secondAttribute="bottom" constant="14" id="oZ8-dt-2Ko"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -210,6 +223,7 @@
                                             <outlet property="explaination" destination="1Jm-T4-4ud" id="M9v-y7-qgJ"/>
                                             <outlet property="imageView" destination="cpd-ek-5iV" id="gvc-6Y-jSh"/>
                                             <outlet property="likeBtn" destination="JRZ-Xb-ZjX" id="8gx-El-72K"/>
+                                            <outlet property="likeCount" destination="tzV-HI-E7S" id="pvK-im-cBx"/>
                                             <outlet property="subject" destination="Q2G-ot-yCi" id="KLR-5n-YAs"/>
                                         </connections>
                                     </collectionViewCell>
