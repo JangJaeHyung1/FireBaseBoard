@@ -58,10 +58,3 @@ FireBase로 구현한 갤러리 게시판
 
 
 
-7. realTimeDataBase 저장된 내용
-
-<img width="808" alt="실시간디비" src="https://user-images.githubusercontent.com/37135479/106381805-b1c12400-63fe-11eb-9509-a9d4f87c3090.png">
-
-
-
-
