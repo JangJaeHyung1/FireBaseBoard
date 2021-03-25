@@ -12,7 +12,7 @@ LIKE 버튼은 firebase의 문서 트랜잭션을 참고하였으며,
 LIKE버튼을 누른 계정수 만큼 count 하도록 함.
 
 
-1. 로그인 화면
+> 1. 로그인 화면
 
 <img width="467" alt="로그인화면" src="https://user-images.githubusercontent.com/37135479/106381647-94d82100-63fd-11eb-895a-f10a2fe9a96c.png">
 
