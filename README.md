@@ -1,6 +1,7 @@
 # FireBaseBoard
 
 FireBase로 구현한 갤러리 게시판
+
 LIKE 버튼은 firebase 기본예제 라이브러리를 사용
 
 1. 로그인 화면
