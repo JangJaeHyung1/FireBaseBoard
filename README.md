@@ -4,6 +4,8 @@ FireBase로 구현한 갤러리 게시판
 
 LIKE 버튼은 firebase 기본예제 라이브러리를 사용
 
+
+
 1. 로그인 화면
 
 <img width="467" alt="로그인화면" src="https://user-images.githubusercontent.com/37135479/106381647-94d82100-63fd-11eb-895a-f10a2fe9a96c.png">
