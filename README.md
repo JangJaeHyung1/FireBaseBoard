@@ -9,7 +9,7 @@ FireBase로 구현한 갤러리 게시판
 
 다른 게시글에 LIKE 버튼을 줄 수 있음.
 
-LIKE 버튼은 firebase 기본예제 라이브러리를 사용하였으며 
+LIKE 버튼은 firebase의 문서 트랜잭션을 
 
 LIKE버튼을 누른 계정수 만큼 count 하도록 함.
 
