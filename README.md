@@ -1,6 +1,6 @@
 # FireBaseBoard
 
-## #FireBase로 구현한 갤러리 게시판
+### FireBase로 구현한 갤러리 게시판
 
 
 구글계정, 애플계정, 이메일로 회원가입 후 로그인 구현.
